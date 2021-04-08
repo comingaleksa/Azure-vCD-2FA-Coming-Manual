@@ -57,9 +57,15 @@ Potrebno je oko 1 minut da se kreira novi tenant, i imaćemo link za pristup na�
 
 Nakon pristupa, prozor se prebacuje na novi tenant.
 Potrebno je dodati novog korisnika, to radimo tako sto kliknemo na dugme __Users__.
+</br>
+
 ![Azure create tenant](images/peranovitenant.PNG)
+
 U okviru Users taba, kliknemo na dugme __New Guest User__.
+</br>
+
 ![Azure create tenant](images/peratenantnoviuser.PNG)
+
 Nakon što popunimo sva polja za novog korisnika, pozivamo ga klikom na dugme invite.
 Nakon ovog koraka, korisnik mora da prihvati link na svom mail nalogu. 
 
@@ -68,20 +74,36 @@ Nakon ovog koraka, korisnik mora da prihvati link na svom mail nalogu.
 ## Konfigurisanje naloga sa korisničke strane
 
 Invite je stigao u korisnički mailbox. 
+</br>
+
 ![Gmail korisnik](images/krstainvite.PNG)
+
 Kada korisnik prihvati link koji smo mu poslali, mora da kreira nalog. Microsoft će mu proslediti niz formi koje treba da popuni da bi se verifikovao. 
+</br>
+
 ![Microsoft ne postoji](images/krstanoexist.PNG)
 
 Klikom na dugme __Create one!__ pokrećemo taj wizard.
+</br>
+
 ![Microsoft wizard start](images/krstacreate.PNG)
+</br>
+
 Nakon ovog prozora pojavljuje se sledeći gde korisnik mora da kreira password.
 ![Microsoft wizard krsta postoji](images/krstapassword.PNG)
+</br>
+
 Nakon unošenja ovih podataka, stići će mail sa verifikacionim kodom.
 ![Microsoft ne postoji](images/krstaime.PNG)
 
+</br>
 Unos koda iz mailboxa:
+
 ![Microsoft ne postoji](images/krstaverify.PNG)
+
+</br>
 Nakon unosa koda, Microsoft nas šalje na stranicu uspešnosti logovanja.
+
 ![Microsoft ne postoji](images/krstauspeo.PNG)
 
 Nakon ovog koraka, vraćamo se Azuru i kreiranju aplikacije.
@@ -189,7 +211,7 @@ Source Attribute:  user.assignedroles
 
    Ono što treba izmeniti: 
    Setovati Source atribut na __user.mail__.
-![claim principal](images/claimprincipal.PNG)
+![claim principal](images/claimprincipal.png)
 
         
 ------------------------
@@ -262,9 +284,9 @@ To radimo tako što odemo na:
 Koraci 3 i 4 na slikama ispod:
 
 
-![MF 1 ](images/mf.PNG)
+![MF 1 ](images/mf.png)
 
-![MF 2 ](images/mf2.PNG)
+![MF 2 ](images/mf2.png)
 
 Nakon ovih podešavanja, korisnik će imati dvofaktorsku autentifikaciju.
 
