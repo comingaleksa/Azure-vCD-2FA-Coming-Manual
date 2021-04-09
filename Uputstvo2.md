@@ -207,7 +207,7 @@ Source Attribute:  user.assignedroles
 # RAZLIKA KOD EKSTERNIH KORISNIKA
    Moramo izmeniti Claim __Unique User Indentifier (Name ID)__.  
 
-   Ovo je bitno jer kada invite-ujemo korisnike jer nam drugačiji user principal name kreira AAD kad korisnik prihvati invite link.
+   Ovo je bitno jer kada invite-ujemo korisnike, drugačiji user principal name nam kreira AAD u odnosu na dodavanje korisnika ručno na AAD.
 
    Ono što treba izmeniti: 
    Setovati Source atribut na __user.mail__.
@@ -246,11 +246,11 @@ Nakon ovog koraka, uspešno smo kreirali 2FA na VMware Cloud Direktoru.
 -----------------------------------------
 ## Importovanje korisnika u Azure i vCloud direktor
 
-Ono što nam preostaje je da dodamo korisnike u našu aplikaciju da bi smo imali mogućnost logovanja na vCD.
+Ono što nam preostaje je da dodamo korisnike u našu aplikaciju da bismo imali mogućnost logovanja na vCD.
 </br>
 Prvo ćemo dodati korisnika u aplikaciju na Azure-u.</br>
 Potrebno je da odemo na stranicu aplikacije koju smo kreirali i da izaberemo polje __Users and Groups__.</br>
-Nakon toga kliknemo dugme __Add User/Group__.</br>  
+Nakon toga kliknem,o dugme __Add User/Group__.</br>  
 ![Azuer korisnik](images/azurekorisnik.PNG)
 
 Otvara nam se prozor u kom možemo da izaberemo korisnika i dodamo ga u aplikaciju.
@@ -276,10 +276,10 @@ Kada snimimo našeg korisnika (koji je identičan kao naš korisnika na aplikaci
 
 Moramo podesiti __MultiFactor Authentication__ na strani Azure-a za korisnike. 
 To radimo tako što odemo na:
-    1. Azure Active Directory
-    2. Users
-    3. U gornjem meniju biramo __Multifactor Authentication__
-    4. Nakon toga otvara nam se prozor sa konfiguracijom Multi faktorske autentifikacije za korisnike
+ </br>   1. Azure Active Directory
+    </br>2. Users
+    </br>3. U gornjem meniju biramo __Multifactor Authentication__
+    </br>4. Nakon toga otvara nam se prozor sa konfiguracijom Multi faktorske autentifikacije za korisnike
 
 Koraci 3 i 4 na slikama ispod:
 
@@ -294,7 +294,7 @@ Nakon ovih podešavanja, korisnik će imati dvofaktorsku autentifikaciju.
 ---------------------------------------
 ## Testiranje 2FA, Logovanje na VMware Cloud Director
 
-Kada se izlogujemo sa našeg naloga, vCD če nam vratiti sledeću stranicu.
+Kada se izlogujemo sa našeg naloga, vCD će nam vratiti sledeću stranicu.
 
 Biramo __Login with Single Sign On__.
 
@@ -314,4 +314,6 @@ I nakon uspešnog logovanja, dolazimo do novog prozora vCD-a, gde smo ulogovani 
 
 ![VCD loginuspesan ](images/uspesanlogin.PNG)
 
-  *Thats all folks!*
+Ono što se može razlikovati je način multi-faktorske autentifikacije koja je postavljena na Azure-u. Može da bude i password, ne mora da bude Microsoft aplikacija. 
+
+  ##                *Thats all folks!*
